@@ -1,0 +1,10 @@
+{
+  "name": "melpack-optimize-middleware",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "dependencies": {
+    "chunk-manifest-webpack2-plugin": "^1.0.1",
+    "webpack": "^2.3.3",
+    "webpack-chunk-hash": "^0.4.0"
+  }
+}

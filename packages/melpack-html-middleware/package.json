@@ -1,0 +1,8 @@
+{
+  "name": "melpack-analyzer-middleware",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "dependencies": {
+    "webpack-bundle-analyzer": "^2.3.1"
+  }
+}
