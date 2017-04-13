@@ -1,10 +1,10 @@
 {
   "name": "melpack-babel-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./index.js",
   "dependencies": {
-    "babel-register": "^6.24.0",
     "babel-preset-latest": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1"
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.0"
   }
 }

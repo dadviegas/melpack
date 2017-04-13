@@ -1,6 +1,6 @@
 {
   "name": "melpack-tester",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "build": "babel-node ./melpack/build.js",
@@ -8,8 +8,8 @@
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "melpack-module-builder": "1.0.0",
     "babel-preset-latest": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1"
+    "babel-preset-stage-2": "^6.24.1",
+    "melpack-module-builder": "^1.0.1"
   }
 }

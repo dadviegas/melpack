@@ -1,6 +1,6 @@
 {
   "name": "melpack-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./index.js",
   "dependencies": {
     "babel-preset-latest": "^6.24.1",
