@@ -2,26 +2,14 @@ import webpack from 'webpack'
 import environment from './environment'
 import getConfig from './webpack/config'
 import Middleware from 'melpack-middleware'
+import jasmineServer from 'melpack-jasmine'
 import GUtil from 'gulp-util'
 import shell from 'shelljs'
 import statsConfig from './webpack/stats'
-import gulp from 'gulp'
-import {Server} from 'karma'
 
 const defaultOptions = {
   environment: 'production',
   watch: false
-}
-
-export const karma = (options = {}) => {
-  gulp.task('test', function (done) {
-    return new Server({
-      configFile: __dirname + '/karma.conf.js',
-      ...options
-    }, done).start();
-  })
-
-  gulp.start('test')
 }
 
 export default (melpackOptions) => {
@@ -42,6 +30,7 @@ export default (melpackOptions) => {
         })
         cb && cb(data)
       })
-    }
+    },
+    test: () => run((webpackConfig) => jasmineServer(options, webpackConfig, settings))
   }
 }

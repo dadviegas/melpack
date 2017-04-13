@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "babel-node --presets es2015 setup.js",
-    "test": "babel-node --presets es2015 karma.js"
+    "build": "babel-node --presets es2015 ./melpack/build.js",
+    "test": "babel-node --presets es2015 ./melpack/test.js"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

@@ -17,7 +17,7 @@ export default (settings) => {
       filename: `[name].js`
     },
     plugins: [
-      // new statsWebpackPlugin('stats.json', stats)
+      new statsWebpackPlugin('stats.json')
     ],
     resolve: {
       modules: [

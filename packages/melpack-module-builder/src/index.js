@@ -1,5 +1,5 @@
 import webpack from 'webpack'
-import melpack, {karma} from 'melpack'
+import melpack from 'melpack'
 import melpackEntryMiddleware from 'melpack-entry-middleware'
 import melpackOutputMiddleware from 'melpack-output-middleware'
 import melpackBabelMiddleware from 'melpack-babel-middleware'
@@ -14,8 +14,6 @@ const defaultOptions = {
   releaseFlags: {},
   watch: false
 }
-
-export const setupKarma = karma
 
 export default (moduleOptions = {}) => {
   const options = Object.assign(defaultOptions, moduleOptions)
@@ -33,9 +31,7 @@ export default (moduleOptions = {}) => {
   bundle.use(melpackDefineMiddleware(releaseFlags))
   bundle.use(melpackAnalyzerMiddleware(moduleOptions))
 
-  const result = bundle.run((data) => {
-    console.log('done')
-  })
+  return bundle
 }
 
 

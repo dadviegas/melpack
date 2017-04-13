@@ -21,6 +21,7 @@ const setEnv = (env) => {
 export default (options) => {
   const resolve = {
     get: resolvePath,
+    root: resolvePath('.'),
     target: resolvePath(options.target || PATH_DIST),
     source: resolvePath(options.source || PATH_SOURCE),
     nodeModules: resolveInternalPath('node_modules')
