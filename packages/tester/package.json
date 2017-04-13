@@ -1,6 +1,6 @@
 {
   "name": "melpack-tester",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "scripts": {
     "build": "babel-node ./melpack/build.js",
@@ -11,5 +11,13 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "melpack-module-builder": "^1.0.1"
+  },
+  "engines": {
+    "node": ">6.0"
+  },
+  "author": "DadViegas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dadviegas/melpack"
   }
 }
