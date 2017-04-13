@@ -1,6 +1,6 @@
 {
   "name": "melpack-optimize-middleware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./index.js",
   "dependencies": {
     "babel-preset-latest": "^6.24.1",
@@ -9,5 +9,13 @@
     "chunk-manifest-webpack2-plugin": "^1.0.1",
     "webpack": "^2.3.3",
     "webpack-chunk-hash": "^0.4.0"
+  },
+  "engines": {
+    "node": ">6.0"
+  },
+  "author": "DadViegas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dadviegas/melpack"
   }
 }

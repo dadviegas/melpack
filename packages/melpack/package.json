@@ -2,6 +2,13 @@
   "version": "1.0.1",
   "name": "melpack",
   "main": "index.js",
+  "description": "a bundle middleware for JavaScript",
+  "keywords": [
+    "webpack",
+    "babel",
+    "middleware",
+    "bundle"
+  ],
   "dependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.24.0",
@@ -10,13 +17,18 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.24.0",
     "gulp-util": "^3.0.8",
-    "melpack-jasmine": "^1.0.1",
-    "melpack-middleware": "^1.0.1",
+    "melpack-jasmine": "^1.0.2",
+    "melpack-middleware": "1.0.0",
     "shelljs": "^0.7.7",
     "stats-webpack-plugin": "^0.6.0",
     "webpack": "^2.3.3"
   },
   "engines": {
     "node": ">6.0"
+  },
+  "author": "DadViegas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dadviegas/melpack"
   }
 }
