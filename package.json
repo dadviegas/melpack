@@ -1,13 +1,21 @@
 {
   "lerna": "2.0.0-rc.1",
   "version": "1.0.0",
-  "devDependencies": {
-    "lerna": "2.0.0-rc.1"
-  },
   "scripts": {
     "build": "lerna bootstrap",
     "build:hoist": "lerna bootstrap --hoist",
     "clean": "lerna clean && rm -rf node_modules",
     "publish": "lerna publish --git-remote upstream --conventional-commits"
+  },
+  "engines": {
+    "node": ">6.0"
+  },
+  "author": "DadViegas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dadviegas/melpack"
+  },
+  "devDependencies": {
+    "lerna": "2.0.0-rc.1"
   }
 }
