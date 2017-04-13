@@ -1,8 +1,11 @@
 {
   "name": "melpack-define-middleware",
   "version": "1.0.0",
-  "main": "./src/index.js",
+  "main": "./index.js",
   "dependencies": {
-    "webpack": "^2.3.3"
+    "webpack": "^2.3.3",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.0"
   }
 }

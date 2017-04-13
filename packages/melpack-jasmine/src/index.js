@@ -27,14 +27,22 @@ export default (options, webpackConf = webpackConfigDefault, settings) => {
       },
       basePath: settings.path.resolve.root,
       frameworks: ['jasmine'],
-      reporters: ['progress'],
+      reporters: ['spec'],
+      specReporter: {
+        maxLogLines: 5,             // limit number of lines logged per test
+        suppressErrorSummary: false, // do not print error summary
+        suppressFailed: false,      // do not print information about failed tests
+        suppressPassed: true,      // do not print information about passed tests
+        suppressSkipped: false,      // do not print information about skipped tests
+        showSpecTiming: true,      // print the time elapsed for each spec
+        failFast: false              // test would finish with error when a first fail occurs. 
+      },
       browsers: ['PhantomJS'],
       files: [
         'src/**/*.js',
         'specs/**/*.js'
       ],
       autoWatch: options.watch,
-      autoWatchBatchDelay: 10,
       singleRun: !options.watch,
     }, done).start();
   })

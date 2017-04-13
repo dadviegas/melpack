@@ -5,7 +5,7 @@ export default (options) => (settings) => (ctx, next) => {
   if (options.analyzer) {
     ctx.plugins.push(new BundleAnalyzerPlugin())
   }
-  console.log('options', options)
+  
   if (options.duplicateAnalyzerChecker) {
     ctx.plugins.push(new DuplicatePackageCheckerPlugin({
       verbose: true

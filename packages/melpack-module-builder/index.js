@@ -1,6 +1,5 @@
 require('babel-register')({
-  'presets': ['es2015'],
-  plugins: ['transform-object-rest-spread']
+  'presets': ['latest', 'stage-2']
 })
 
 module.exports = require('./src/index.js').default

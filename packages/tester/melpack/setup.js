@@ -5,7 +5,8 @@ const environment = 'test'
 const moduleOptions = {
   environment,
   releaseFlags: require(`../settings/${environment}.js`).default,
-  analyzer: true,
+  analyzer: false,
+  watch: true
 }
 
 export default melpack(moduleOptions)
