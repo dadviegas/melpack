@@ -31,8 +31,7 @@ export default (options) => {
     modules: relativePath(PATH_MODULES),
     assets: relativePath(PATH_ASSETS),
     dist: relativePath(PATH_DIST),
-    nodeModules: relativePath('node_modules'),
-    melpackNodeModules: relativeInternalPath('../../node_modules')
+    nodeModules: relativePath('node_modules')
   }
 
   const data =  {

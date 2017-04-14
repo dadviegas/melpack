@@ -4,9 +4,11 @@ export default (options) => (settings) => (ctx, next) => {
       rules: [
         {
           test: /\.js$/,
-          exclude: settings.path.resolve.nodeModules,
+          exclude: /node_modules/,
           include: settings.path.resolve.source,
-          loader: 'babel-loader'
+          use: {
+            loader: 'babel-loader'
+          }
         }
       ]
     }

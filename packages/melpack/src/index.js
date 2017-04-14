@@ -23,13 +23,15 @@ export default (melpackOptions) => {
   return {
     use,
     run: (cb) => {
-      run((data) => {
+      const func = (data) => {
         webpack(data, (err, stats) => {
         if (err) { throw new GUtil.PluginError('webpack:build', err); }
           GUtil.log('[webpack:build]', stats.toString(statsConfig(settings)));
         })
         cb && cb(data)
-      })
+      }
+
+      run(func.bind(this))
     },
     test: () => run((webpackConfig) => jasmineServer(options, webpackConfig, settings))
   }

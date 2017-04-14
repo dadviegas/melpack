@@ -27,7 +27,7 @@ export default (options, webpackConf = webpackConfigDefault, settings) => {
       },
       basePath: settings.path.resolve.root,
       frameworks: ['jasmine'],
-      reporters: ['spec'],
+      reporters:  ['spec'], // ['dots', 'spec', 'progress'],
       specReporter: {
         maxLogLines: 5,             // limit number of lines logged per test
         suppressErrorSummary: false, // do not print error summary

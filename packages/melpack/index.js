@@ -1,5 +1,8 @@
 require('babel-register')({
-  'presets': ['latest', 'stage-2']
+  presets: [
+    'babel-preset-es2015',
+    'babel-preset-stage-2',
+  ]
 })
 
 module.exports = require('./src/index.js').default

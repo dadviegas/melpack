@@ -5,7 +5,8 @@
     "build": "lerna bootstrap",
     "build:hoist": "lerna bootstrap --hoist",
     "clean": "lerna clean && rm -rf node_modules",
-    "publish": "lerna publish --git-remote upstream --conventional-commits"
+    "publish": "lerna publish --git-remote upstream --conventional-commits",
+    "publish:git": "lerna publish --yes --skip-npm"
   },
   "engines": {
     "node": ">6.0"

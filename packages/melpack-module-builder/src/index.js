@@ -1,4 +1,3 @@
-import webpack from 'webpack'
 import melpack from 'melpack'
 import melpackEntryMiddleware from 'melpack-entry-middleware'
 import melpackOutputMiddleware from 'melpack-output-middleware'
@@ -20,13 +19,13 @@ export default (moduleOptions = {}) => {
   const {environment, releaseFlags} = options
 
   const bundle = melpack(options)
-
-  bundle.use(melpackBabelMiddleware())
+  
   bundle.use(melpackEntryMiddleware({ index: './index.js' }))
   bundle.use(melpackOutputMiddleware({ 
     path: './lib',
     filename: '[name].js' 
   }))
+  bundle.use(melpackBabelMiddleware())
   bundle.use(melpackOptimizeMiddleware())
   bundle.use(melpackDefineMiddleware(releaseFlags))
   bundle.use(melpackAnalyzerMiddleware(moduleOptions))
