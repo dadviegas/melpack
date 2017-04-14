@@ -1,6 +1,6 @@
 {
   "name": "melpack-analyzer-middleware",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./lib/index.js",
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
