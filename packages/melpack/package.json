@@ -1,7 +1,7 @@
 {
   "version": "1.0.2",
   "name": "melpack",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "description": "a bundle middleware for JavaScript",
   "keywords": [
     "webpack",

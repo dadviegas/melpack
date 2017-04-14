@@ -1,7 +1,7 @@
 {
   "name": "melpack-middleware",
   "version": "1.0.3",
-  "main": "./index.js",
+  "main": "./lib/index.js",
   "engines": {
     "node": ">6.0"
   },

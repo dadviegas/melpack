@@ -1,7 +1,7 @@
 {
   "name": "melpack-optimize-middleware",
   "version": "1.0.3",
-  "main": "./src/index.js",
+  "main": "./lib/index.js",
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
