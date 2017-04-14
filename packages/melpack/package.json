@@ -1,7 +1,7 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "name": "melpack",
-  "main": "./lib/index.js",
+  "main": "index.js",
   "description": "a bundle middleware for JavaScript",
   "keywords": [
     "webpack",
@@ -17,8 +17,8 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.24.0",
     "gulp-util": "^3.0.8",
-    "melpack-jasmine": "^1.0.6",
-    "melpack-middleware": "^1.0.6",
+    "melpack-jasmine": "^1.0.7",
+    "melpack-middleware": "^1.0.7",
     "shelljs": "^0.7.7",
     "stats-webpack-plugin": "^0.6.0",
     "webpack": "^2.3.3"
