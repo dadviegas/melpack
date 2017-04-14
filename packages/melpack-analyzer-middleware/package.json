@@ -2,6 +2,13 @@
   "name": "melpack-analyzer-middleware",
   "version": "1.0.4",
   "main": "./lib/index.js",
+  "description": "a analyzer middleware for JavaScript bundles using webpack",
+  "keywords": [
+    "webpack",
+    "analyzer",
+    "middleware",
+    "bundle"
+  ],
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",

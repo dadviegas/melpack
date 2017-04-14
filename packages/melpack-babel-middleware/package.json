@@ -2,6 +2,13 @@
   "name": "melpack-babel-middleware",
   "version": "1.0.3",
   "main": "./lib/index.js",
+  "description": "a babel transpile middleware for JavaScript bundles using webpack",
+  "keywords": [
+    "webpack",
+    "transpile",
+    "middleware",
+    "bundle"
+  ],
   "engines": {
     "node": ">6.0"
   },

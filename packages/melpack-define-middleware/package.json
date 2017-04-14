@@ -2,6 +2,13 @@
   "name": "melpack-define-middleware",
   "version": "1.0.3",
   "main": "./lib/index.js",
+  "description": "a define middleware for JavaScript bundles using webpack",
+  "keywords": [
+    "webpack",
+    "define",
+    "middleware",
+    "bundle"
+  ],
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",

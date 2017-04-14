@@ -2,6 +2,12 @@
   "name": "melpack-middleware",
   "version": "1.0.4",
   "main": "./lib/index.js",
+  "description": "a middleware for JavaScript bundles",
+  "keywords": [
+    "webpack",
+    "middleware",
+    "bundle"
+  ],
   "engines": {
     "node": ">6.0"
   },

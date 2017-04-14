@@ -2,6 +2,13 @@
   "version": "1.0.4",
   "name": "melpack-jasmine",
   "main": "./lib/index.js",
+  "description": "a jasmine middleware for JavaScript bundles using webpack",
+  "keywords": [
+    "webpack",
+    "jasmine",
+    "middleware",
+    "bundle"
+  ],
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.24.0",

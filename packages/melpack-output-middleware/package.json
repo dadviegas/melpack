@@ -2,6 +2,13 @@
   "name": "melpack-output-middleware",
   "version": "1.0.4",
   "main": "./lib/index.js",
+  "description": "a output middleware for JavaScript bundles using webpack",
+  "keywords": [
+    "webpack",
+    "output",
+    "middleware",
+    "bundle"
+  ],
   "engines": {
     "node": ">6.0"
   },
