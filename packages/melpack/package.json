@@ -1,5 +1,5 @@
 {
-  "version": "1.0.9",
+  "version": "1.0.10",
   "name": "melpack",
   "main": "./index.js",
   "description": "a bundle middleware for JavaScript",
@@ -10,7 +10,7 @@
     "bundle",
     "gulp"
   ],
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^7.0.0-beta.1",
     "babel-preset-es2015": "^6.24.1",

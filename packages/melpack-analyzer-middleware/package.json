@@ -1,6 +1,6 @@
 {
   "name": "melpack-analyzer-middleware",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "./index.js",
   "description": "a analyzer middleware for JavaScript bundles using webpack",
   "keywords": [
@@ -9,7 +9,7 @@
     "middleware",
     "bundle"
   ],
-  "devDependencies": {
+  "dependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.24.0",
