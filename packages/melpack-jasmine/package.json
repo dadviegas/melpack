@@ -1,5 +1,5 @@
 {
-  "version": "1.0.7",
+  "version": "1.0.8",
   "name": "melpack-jasmine",
   "main": "index.js",
   "description": "a jasmine middleware for JavaScript bundles using webpack",
