@@ -3,6 +3,9 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.13"></a>
+## [1.0.13](https://github.com/dadviegas/melpack/compare/melpack-tester@1.0.2...melpack-tester@1.0.13) (2017-04-17)
+
 <a name="1.0.12"></a>
 ## [1.0.12](https://github.com/dadviegas/melpack/compare/melpack-tester@1.0.9...melpack-tester@1.0.12) (2017-04-17)
 

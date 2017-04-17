@@ -1,6 +1,6 @@
 {
   "name": "melpack-optimize-middleware",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "main": "./index.js",
   "description": "a optimize middleware for JavaScript bundles using webpack",
   "keywords": [
