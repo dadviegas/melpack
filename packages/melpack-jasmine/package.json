@@ -1,5 +1,5 @@
 {
-  "version": "1.0.8",
+  "version": "1.0.9",
   "name": "melpack-jasmine",
   "main": "index.js",
   "description": "a jasmine middleware for JavaScript bundles using webpack",
@@ -9,7 +9,7 @@
     "middleware",
     "bundle"
   ],
-  "devDependencies": {
+  "dependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.24.0",
     "babel-preset-es2015": "^6.24.1",
