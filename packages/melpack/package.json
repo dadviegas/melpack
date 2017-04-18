@@ -1,5 +1,5 @@
 {
-  "version": "1.0.15",
+  "version": "1.0.16",
   "name": "melpack",
   "main": "./index.js",
   "description": "a bundle middleware for JavaScript",
@@ -20,8 +20,8 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.24.0",
     "gulp-util": "^3.0.8",
-    "melpack-jasmine": "^1.0.14",
-    "melpack-middleware": "^1.0.14",
+    "melpack-jasmine": "^1.0.15",
+    "melpack-middleware": "^1.0.15",
     "shelljs": "^0.7.7",
     "stats-webpack-plugin": "^0.6.0",
     "webpack": "^2.4.1"

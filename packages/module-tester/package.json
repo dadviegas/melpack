@@ -1,6 +1,6 @@
 {
   "name": "melpack-tester",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "scripts": {
     "build": "babel-node ./melpack/build.js",
     "test": "babel-node ./melpack/test.js",
