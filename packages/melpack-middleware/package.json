@@ -1,6 +1,6 @@
 {
   "name": "melpack-middleware",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "main": "./lib/index.js",
   "description": "a middleware for JavaScript bundles",
   "keywords": [
