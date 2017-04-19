@@ -1,6 +1,6 @@
 {
   "name": "melpack-module-builder",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "main": "./lib/index.js",
   "description": "a module bundle creator for JavaScript using webpack",
   "keywords": [
@@ -18,12 +18,12 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.24.0",
     "melpack": "^1.0.17",
-    "melpack-analyzer-middleware": "^1.0.16",
-    "melpack-babel-middleware": "^1.0.15",
-    "melpack-define-middleware": "^1.0.15",
-    "melpack-entry-middleware": "^1.0.15",
-    "melpack-optimize-middleware": "^1.0.15",
-    "melpack-output-middleware": "^1.0.16"
+    "melpack-analyzer-middleware": "^1.0.17",
+    "melpack-babel-middleware": "^1.0.16",
+    "melpack-define-middleware": "^1.0.16",
+    "melpack-entry-middleware": "^1.0.16",
+    "melpack-optimize-middleware": "^1.0.16",
+    "melpack-output-middleware": "^1.0.17"
   },
   "engines": {
     "node": ">6.0"
