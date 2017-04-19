@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.19"></a>
+## [1.0.19](https://github.com/dadviegas/melpack/compare/melpack-html-middleware@1.0.3...melpack-html-middleware@1.0.19) (2017-04-19)
+
+
+
+
 <a name="1.0.18"></a>
 ## [1.0.18](https://github.com/dadviegas/melpack/compare/melpack-html-middleware@1.0.3...melpack-html-middleware@1.0.18) (2017-04-19)
 
