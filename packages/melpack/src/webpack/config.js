@@ -1,4 +1,6 @@
-import statsWebpackPlugin from 'stats-webpack-plugin'
+import statsBuilder from './stats'
+
+// https://webpack.js.org/configuration/
 
 export default (settings) => {
   const isDevelopment = settings.isDevelopment
@@ -16,15 +18,12 @@ export default (settings) => {
       path: target,
       filename: `[name].js`
     },
-    plugins: [
-      new statsWebpackPlugin('stats.json')
-    ],
+    plugins: [],
     resolve: {
       modules: [
-        '.', 
-        settings.path.relative.nodeModules, 
-        settings.path.relative.modules, 
-        settings.path.relative.assets
+        '.',
+        settings.path.resolve.nodeModules,
+        settings.path.resolve.source
       ],
       extensions: ['.loader.js', '.js', ".json"]
     },

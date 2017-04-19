@@ -4,8 +4,6 @@ const PATH_DIST = './dist'
 const PATH_SOURCE = './src'
 const PATH_ASSETS = './assets'
 const PATH_MODULES = './modules'
-const resolveInternalPath = (folder) => path.resolve(__dirname, folder)
-const relativeInternalPath = (folder) => path.relative(__dirname, folder)
 const resolvePath = (folder) => path.resolve(process.cwd(), folder)
 const relativePath = (folder) => path.relative(PATH_SOURCE, folder)
 
@@ -23,15 +21,15 @@ export default (options) => {
     root: resolvePath('.'),
     target: resolvePath(options.target || PATH_DIST),
     source: resolvePath(options.source || PATH_SOURCE),
-    melpackNodeModules: resolveInternalPath('../../node_modules')
+    nodeModules: resolvePath('./node_modules')
   }
 
   const relative = {
     get: relativePath,
+    root: relativePath('.'),
     modules: relativePath(PATH_MODULES),
     assets: relativePath(PATH_ASSETS),
     dist: relativePath(PATH_DIST),
-    nodeModules: relativePath('node_modules')
   }
 
   const data =  {

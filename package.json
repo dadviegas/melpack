@@ -1,7 +1,8 @@
 {
-  "lerna": "2.0.0-rc.1",
+  "lerna": "^2.0.0-rc.3",
   "version": "1.0.0",
   "scripts": {
+    "compile": "lerna run compile",
     "build": "lerna bootstrap",
     "build:hoist": "lerna bootstrap --hoist",
     "clean": "lerna clean && rm -rf node_modules",
@@ -17,6 +18,9 @@
     "url": "https://github.com/dadviegas/melpack"
   },
   "devDependencies": {
-    "lerna": "2.0.0-rc.1"
+    "lerna": "^2.0.0-rc.3",
+    "babel-loader": "^7.0.0-beta.1",
+    "babel-core": "^6.24.0",
+    "webpack": "^2.4.1"
   }
 }

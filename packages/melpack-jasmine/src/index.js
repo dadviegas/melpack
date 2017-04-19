@@ -17,6 +17,8 @@ const webpackConfigDefault = {
 export default (options, webpackConf = webpackConfigDefault, settings) => {
   delete webpackConf.entry
   delete webpackConf.output
+  webpackConf.stats = webpackConf.stats || {} 
+  webpackConf.stats.color = true
 
   gulp.task('test', function (done) {
     return new Server({
@@ -27,7 +29,9 @@ export default (options, webpackConf = webpackConfigDefault, settings) => {
       },
       basePath: settings.path.resolve.root,
       frameworks: ['jasmine'],
-      reporters:  ['spec'], // ['dots', 'spec', 'progress'],
+      reporters: [
+        'spec', 
+      ], 
       specReporter: {
         maxLogLines: 5,             // limit number of lines logged per test
         suppressErrorSummary: false, // do not print error summary
@@ -44,6 +48,11 @@ export default (options, webpackConf = webpackConfigDefault, settings) => {
       ],
       autoWatch: options.watch,
       singleRun: !options.watch,
+      webpackMiddleware: {
+        stats: {
+          colors: true
+        }
+      }
     }, done).start();
   })
 

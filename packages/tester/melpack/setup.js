@@ -1,4 +1,3 @@
-console.log(require.resolve('babel-loader'))
 import module from 'melpack-module-builder'
 
 const environment = 'test'
