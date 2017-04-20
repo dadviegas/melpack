@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.25"></a>
+## [1.0.25](https://github.com/dadviegas/melpack/compare/melpack-jasmine@1.0.2...melpack-jasmine@1.0.25) (2017-04-20)
+
+
+
+
 <a name="1.0.24"></a>
 ## [1.0.24](https://github.com/dadviegas/melpack/compare/melpack-jasmine@1.0.2...melpack-jasmine@1.0.24) (2017-04-20)
 

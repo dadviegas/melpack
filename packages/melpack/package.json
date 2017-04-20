@@ -1,5 +1,5 @@
 {
-  "version": "1.0.25",
+  "version": "1.0.26",
   "name": "melpack",
   "main": "./lib/index.js",
   "description": "a bundle middleware for JavaScript",
@@ -15,8 +15,9 @@
   },
   "dependencies": {
     "gulp-util": "^3.0.8",
-    "melpack-jasmine": "^1.0.24",
-    "melpack-middleware": "^1.0.22"
+    "melpack-jasmine": "^1.0.25",
+    "melpack-middleware": "^1.0.22",
+    "webpack": "^2.4.1"
   },
   "engines": {
     "node": ">6.0"

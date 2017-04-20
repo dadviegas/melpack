@@ -1,6 +1,6 @@
 {
   "name": "melpack-define-middleware",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "main": "./lib/index.js",
   "description": "a define middleware for JavaScript bundles using webpack",
   "keywords": [
