@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.getCommandOptions = undefined;
 
 var _webpack = require('webpack');
 
@@ -11,6 +12,10 @@ var _webpack2 = _interopRequireDefault(_webpack);
 var _environment = require('./environment');
 
 var _environment2 = _interopRequireDefault(_environment);
+
+var _command = require('./environment/command');
+
+var _command2 = _interopRequireDefault(_command);
 
 var _config = require('./webpack/config');
 
@@ -42,6 +47,8 @@ var defaultOptions = {
   environment: 'production',
   watch: false
 };
+
+var getCommandOptions = exports.getCommandOptions = _command2.default;
 
 exports.default = function (melpackOptions) {
   var options = Object.assign(defaultOptions, melpackOptions);

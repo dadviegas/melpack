@@ -1,5 +1,6 @@
 import webpack from 'webpack'
 import environment from './environment'
+import commandParser from './environment/command'
 import getConfig from './webpack/config'
 import Middleware from 'melpack-middleware'
 import jasmineServer from 'melpack-jasmine'
@@ -11,6 +12,8 @@ const defaultOptions = {
   environment: 'production',
   watch: false
 }
+
+export const getCommandOptions = commandParser
 
 export default (melpackOptions) => {
   const options = Object.assign(defaultOptions, melpackOptions)

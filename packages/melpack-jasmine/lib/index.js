@@ -35,8 +35,6 @@ exports.default = function (options) {
 
   delete webpackConf.entry;
   delete webpackConf.output;
-  webpackConf.stats = webpackConf.stats || {};
-  webpackConf.stats.color = true;
 
   _gulp2.default.task('test', function (done) {
     return new _karma.Server({

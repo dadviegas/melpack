@@ -17,8 +17,6 @@ const webpackConfigDefault = {
 export default (options, webpackConf = webpackConfigDefault, settings) => {
   delete webpackConf.entry
   delete webpackConf.output
-  webpackConf.stats = webpackConf.stats || {} 
-  webpackConf.stats.color = true
 
   gulp.task('test', function (done) {
     return new Server({

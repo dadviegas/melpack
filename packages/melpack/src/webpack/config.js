@@ -20,6 +20,9 @@ export default (settings) => {
     },
     plugins: [],
     resolve: {
+      alias: {
+        src: settings.path.resolve.source
+      },
       modules: [
         '.',
         settings.path.resolve.nodeModules,

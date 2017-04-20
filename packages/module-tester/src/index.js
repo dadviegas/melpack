@@ -9,4 +9,4 @@ var xx = {
 
 var {a} = x
 
-console.log(a)
+console.log(a, RF_APP_ENVIRONMENT)

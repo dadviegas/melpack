@@ -1,4 +1,4 @@
-import melpack from 'melpack'
+import melpack, {getCommandOptions as commandParser} from 'melpack'
 import melpackEntryMiddleware from 'melpack-entry-middleware'
 import melpackOutputMiddleware from 'melpack-output-middleware'
 import melpackBabelMiddleware from 'melpack-babel-middleware'
@@ -13,6 +13,8 @@ const defaultOptions = {
   releaseFlags: {},
   watch: false
 }
+
+export const getCommandOptions = commandParser
 
 export default (moduleOptions = {}) => {
   const options = Object.assign(defaultOptions, moduleOptions)

@@ -1,4 +1,4 @@
-import src from '../src/index.js'
+import src from 'src/index.js'
 
 describe('action', function () {
   it('test', function () {

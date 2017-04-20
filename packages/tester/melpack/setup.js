@@ -1,12 +1,15 @@
-import module from 'melpack-module-builder'
+import module, {getCommandOptions} from 'melpack-module-builder'
 
-const environment = 'test'
+const options = getCommandOptions()
+const {environment} = options
 
 const moduleOptions = {
-  environment,
   releaseFlags: require(`../settings/${environment}.js`).default,
   analyzer: false,
-  watch: false
+  duplicateAnalyzerChecker: false,
+  analyzer: false,
+  watch: false,
+  ...options
 }
 
 export default module(moduleOptions)

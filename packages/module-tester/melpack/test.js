@@ -1,3 +1,3 @@
 import module from './setup'
 
-module.test(() => {console.log('Test Build')})
+module.test((d) => {console.log('Test Build', d)})

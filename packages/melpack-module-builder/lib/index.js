@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.getCommandOptions = undefined;
 
 var _melpack = require('melpack');
 
@@ -41,6 +42,8 @@ var defaultOptions = {
   releaseFlags: {},
   watch: false
 };
+
+var getCommandOptions = exports.getCommandOptions = _melpack.getCommandOptions;
 
 exports.default = function () {
   var moduleOptions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};

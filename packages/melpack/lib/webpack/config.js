@@ -30,6 +30,9 @@ exports.default = function (settings) {
     },
     plugins: [],
     resolve: {
+      alias: {
+        src: settings.path.resolve.source
+      },
       modules: ['.', settings.path.resolve.nodeModules, settings.path.resolve.source],
       extensions: ['.loader.js', '.js', ".json"]
     },
