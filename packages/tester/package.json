@@ -1,15 +1,21 @@
 {
   "name": "melpack-tester",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "scripts": {
-    "build": "babel-node ./melpack/build.js",
-    "test": "babel-node ./melpack/test.js"
+    "buildScript": "babel-node ./melpack/build.js",
+    "testScript": "babel-node ./melpack/test.js",
+    "build": "npm run buildScript -- --environment=development",
+    "build:production": "npm run buildScript -- --environment=production",
+    "build:production:analyzer": "npm run build:production -- --analyzer",
+    "build:qa": "npm run buildScript -- --environment=qa",
+    "test": "npm run testScript -- --environment=test",
+    "test:watch": "npm run test -- --watch"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "melpack-module-builder": "^1.0.25"
+    "melpack-module-builder": "^1.0.26"
   },
   "engines": {
     "node": ">6.0"
