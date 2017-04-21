@@ -17,12 +17,11 @@ const webpackConfigDefault = {
 export default (options, webpackConf = webpackConfigDefault, settings) => {
   delete webpackConf.entry
   delete webpackConf.output
-
+  webpackConf.devtool = 'inline-source-map'
   gulp.task('test', function (done) {
     return new Server({
       webpack: webpackConf,
       preprocessors: {
-        'src/**/*.js': ['webpack', 'sourcemap'],
         'specs/**/*.js': ['webpack', 'sourcemap']
       },
       basePath: settings.path.resolve.root,

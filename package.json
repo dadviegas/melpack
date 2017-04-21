@@ -5,7 +5,8 @@
     "compile": "lerna run compile",
     "build": "lerna bootstrap",
     "clean": "lerna clean && rm -rf node_modules",
-    "publish": "lerna publish --git-remote upstream --conventional-commits",
+    "publish": "lerna publish",
+    "publish:conventional": "lerna publish --git-remote upstream --conventional-commits",
     "publish:git": "lerna publish --yes --skip-npm"
   },
   "engines": {
@@ -17,14 +18,8 @@
     "url": "https://github.com/dadviegas/melpack"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.0",
     "babel-loader": "^7.0.0-beta.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "lerna": "^2.0.0-rc.3",
-    "minimist": "^1.2.0",
-    "shelljs": "^0.7.7",
-    "webpack": "^2.4.1"
+    "lerna": "^2.0.0-rc.3"
   }
 }

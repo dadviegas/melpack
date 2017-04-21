@@ -12,7 +12,10 @@
   "scripts": {
     "compile": "babel --presets es2015,stage-2 -d lib/ src/"
   },
-  "dependencies": {
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "melpack": "^1.0.28",
     "melpack-analyzer-middleware": "^1.0.22",
     "melpack-babel-middleware": "^1.0.21",
