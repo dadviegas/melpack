@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.25"></a>
+## [1.0.25](https://github.com/dadviegas/melpack/compare/melpack-analyzer-middleware@1.0.2...melpack-analyzer-middleware@1.0.25) (2017-04-21)
+
+
+
+
 <a name="1.0.22"></a>
 ## [1.0.22](https://github.com/dadviegas/melpack/compare/melpack-analyzer-middleware@1.0.2...melpack-analyzer-middleware@1.0.22) (2017-04-20)
 

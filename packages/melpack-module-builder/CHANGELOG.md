@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.35"></a>
+## [1.0.35](https://github.com/dadviegas/melpack/compare/melpack-module-builder@1.0.2...melpack-module-builder@1.0.35) (2017-04-21)
+
+
+
+
 <a name="1.0.29"></a>
 ## [1.0.29](https://github.com/dadviegas/melpack/compare/melpack-module-builder@1.0.2...melpack-module-builder@1.0.29) (2017-04-20)
 

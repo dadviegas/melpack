@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.24"></a>
+## [1.0.24](https://github.com/dadviegas/melpack/compare/melpack-entry-middleware@1.0.2...melpack-entry-middleware@1.0.24) (2017-04-21)
+
+
+
+
 <a name="1.0.21"></a>
 ## [1.0.21](https://github.com/dadviegas/melpack/compare/melpack-entry-middleware@1.0.2...melpack-entry-middleware@1.0.21) (2017-04-20)
 
