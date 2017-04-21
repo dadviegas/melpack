@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "compile": "lerna run compile",
-    "build": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap",
+    "bootstrap:hoist": "lerna bootstrap --hoist",
     "clean": "lerna clean && rm -rf node_modules",
-    "publish": "lerna publish",
+    "publish": "npm run compile && lerna publish",
     "publish:conventional": "lerna publish --git-remote upstream --conventional-commits",
     "publish:git": "lerna publish --yes --skip-npm"
   },
