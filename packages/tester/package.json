@@ -1,6 +1,6 @@
 {
   "name": "melpack-tester",
-  "version": "1.0.30",
+  "version": "1.0.31",
   "scripts": {
     "buildScript": "babel-node ./melpack/build.js",
     "testScript": "babel-node ./melpack/test.js",
@@ -17,7 +17,6 @@
     "babel-preset-stage-2": "^6.24.1",
     "melpack-module-builder": "^1.0.30"
   },
-  "private": true,
   "engines": {
     "node": ">6.0"
   },
