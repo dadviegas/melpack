@@ -1,6 +1,6 @@
 {
   "name": "melpack-module-tester",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "scripts": {
     "buildScript": "babel-node ./melpack/build.js",
     "testScript": "babel-node ./melpack/test.js",
@@ -15,13 +15,13 @@
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "melpack": "^1.0.28",
-    "melpack-analyzer-middleware": "^1.0.22",
-    "melpack-babel-middleware": "^1.0.21",
-    "melpack-define-middleware": "^1.0.26",
-    "melpack-entry-middleware": "^1.0.21",
-    "melpack-optimize-middleware": "^1.0.21",
-    "melpack-output-middleware": "^1.0.22"
+    "melpack": "^1.0.29",
+    "melpack-analyzer-middleware": "^1.0.23",
+    "melpack-babel-middleware": "^1.0.22",
+    "melpack-define-middleware": "^1.0.27",
+    "melpack-entry-middleware": "^1.0.22",
+    "melpack-optimize-middleware": "^1.0.22",
+    "melpack-output-middleware": "^1.0.23"
   },
   "engines": {
     "node": ">6.0"

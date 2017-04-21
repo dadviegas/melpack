@@ -1,6 +1,6 @@
 {
   "name": "melpack-entry-middleware",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "main": "./lib/index.js",
   "description": "a entry middleware for JavaScript bundles using webpack",
   "keywords": [
