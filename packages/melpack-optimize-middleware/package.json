@@ -1,6 +1,6 @@
 {
   "name": "melpack-optimize-middleware",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "main": "./lib/index.js",
   "description": "a optimize middleware for JavaScript bundles using webpack",
   "keywords": [
@@ -20,7 +20,7 @@
     "type": "git",
     "url": "https://github.com/dadviegas/melpack"
   },
-  "devDependencies": {
+  "dependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
