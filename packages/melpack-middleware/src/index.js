@@ -3,7 +3,6 @@ class MelpackMiddelware {
     this.settings = settings || {}
     this.context = context || {}
     this.stack = []
-    this.stackResult = []
 
     this.use = this.use.bind(this)
     this.run = this.run.bind(this)
@@ -35,12 +34,8 @@ class MelpackMiddelware {
     node && node.middleware(this.context, (err) => {
       if(!err) {
         this.call(interactor)
-        this.stackResult.push(this.context)
       } else {
-        return this.endCallback({
-          error: this.stackResult,
-          success: false
-        })
+        return this.endCallback(this.context)
       }
     })
     

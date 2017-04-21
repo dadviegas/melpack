@@ -54,12 +54,8 @@ exports.default = function () {
 
 
   var bundle = (0, _melpack2.default)(options);
-
-  bundle.use((0, _melpackEntryMiddleware2.default)({ index: './index.js' }));
-  bundle.use((0, _melpackOutputMiddleware2.default)({
-    path: './lib',
-    filename: '[name].js'
-  }));
+  bundle.use((0, _melpackEntryMiddleware2.default)({ index: ['./index.js'] }));
+  bundle.use((0, _melpackOutputMiddleware2.default)({ path: './lib' }));
   bundle.use((0, _melpackBabelMiddleware2.default)());
   bundle.use((0, _melpackOptimizeMiddleware2.default)());
   bundle.use((0, _melpackDefineMiddleware2.default)(releaseFlags));

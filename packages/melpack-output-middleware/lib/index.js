@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -17,9 +17,7 @@ exports.default = function (options) {
         path: settings.path.resolve.target
       });
 
-      var isDefined = ctx.output;
-
-      next(isDefined ? null : new Error('Output must be defined'));
+      next();
     };
   };
 };

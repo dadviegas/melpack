@@ -5,9 +5,8 @@ const {environment} = options
 
 const moduleOptions = {
   releaseFlags: require(`../settings/${environment}.js`).default,
-  analyzer: false,
+  analyzer: true,
   duplicateAnalyzerChecker: false,
-  analyzer: false,
   watch: false,
   ...options
 }

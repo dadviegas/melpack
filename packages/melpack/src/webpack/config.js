@@ -18,6 +18,9 @@ export default (settings) => {
       path: target,
       filename: `[name].js`
     },
+    module: {
+      rules: []
+    },
     plugins: [],
     resolve: {
       alias: {
@@ -32,6 +35,7 @@ export default (settings) => {
     },
     performance: {
       hints: "warning"
-    }
+    },
+    stats: statsBuilder(settings)
   }
 }

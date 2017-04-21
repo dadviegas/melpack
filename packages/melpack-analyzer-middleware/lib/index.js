@@ -19,6 +19,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = function (options) {
   return function (settings) {
     return function (ctx, next) {
+      if (settings.isTest) {
+        return next();
+      }
+
       if (options.analyzer) {
         ctx.plugins.push(new _webpackBundleAnalyzer.BundleAnalyzerPlugin());
       }

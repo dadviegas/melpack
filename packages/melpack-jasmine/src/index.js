@@ -3,18 +3,7 @@ import webpack from'webpack'
 import {Server} from 'karma'
 import gulp from 'gulp'
 
-const webpackConfigDefault = {
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader'
-      }
-    ]
-  }
-}
-
-export default (options, webpackConf = webpackConfigDefault, settings) => {
+export default (options, webpackConf) => {
   delete webpackConf.entry
   delete webpackConf.output
   webpackConf.devtool = 'inline-source-map'
@@ -25,7 +14,7 @@ export default (options, webpackConf = webpackConfigDefault, settings) => {
         'src/**/*.js': ['webpack', 'sourcemap'],
         'specs/**/*.js': ['webpack', 'sourcemap']
       },
-      basePath: settings.path.resolve.root,
+      basePath: '.',
       frameworks: ['jasmine'],
       reporters: [
         'spec', 
@@ -39,7 +28,7 @@ export default (options, webpackConf = webpackConfigDefault, settings) => {
         showSpecTiming: true,      // print the time elapsed for each spec
         failFast: false              // test would finish with error when a first fail occurs. 
       },
-      browsers: ['PhantomJS'],
+      browsers: ['jsdom'], // jsdom PhantomJS Chrome
       files: [
         'specs/**/*.js'
       ],
@@ -50,7 +39,10 @@ export default (options, webpackConf = webpackConfigDefault, settings) => {
           colors: true
         }
       }
-    }, done).start();
+    }, (exitCode) => {
+      done();
+      process.exit(exitCode);
+    }).start();
   })
 
   gulp.start('test')

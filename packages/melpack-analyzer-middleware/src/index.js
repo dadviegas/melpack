@@ -3,6 +3,10 @@ import DuplicatePackageCheckerPlugin from 'duplicate-package-checker-webpack-plu
 import statsWebpackPlugin from 'stats-webpack-plugin'
 
 export default (options) => (settings) => (ctx, next) => {
+  if(settings.isTest) {
+    return next()
+  }
+
   if (options.analyzer) {
     ctx.plugins.push(new BundleAnalyzerPlugin())
   }

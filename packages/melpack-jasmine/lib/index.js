@@ -20,19 +20,7 @@ var _gulp2 = _interopRequireDefault(_gulp);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var webpackConfigDefault = {
-  module: {
-    rules: [{
-      test: /\.js$/,
-      loader: 'babel-loader'
-    }]
-  }
-};
-
-exports.default = function (options) {
-  var webpackConf = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : webpackConfigDefault;
-  var settings = arguments[2];
-
+exports.default = function (options, webpackConf) {
   delete webpackConf.entry;
   delete webpackConf.output;
   webpackConf.devtool = 'inline-source-map';
@@ -43,7 +31,7 @@ exports.default = function (options) {
         'src/**/*.js': ['webpack', 'sourcemap'],
         'specs/**/*.js': ['webpack', 'sourcemap']
       },
-      basePath: settings.path.resolve.root,
+      basePath: '.',
       frameworks: ['jasmine'],
       reporters: ['spec'],
       specReporter: {
@@ -55,7 +43,7 @@ exports.default = function (options) {
         showSpecTiming: true, // print the time elapsed for each spec
         failFast: false // test would finish with error when a first fail occurs. 
       },
-      browsers: ['PhantomJS'],
+      browsers: ['jsdom'], // jsdom PhantomJS Chrome
       files: ['specs/**/*.js'],
       autoWatch: options.watch,
       singleRun: !options.watch,
@@ -64,7 +52,10 @@ exports.default = function (options) {
           colors: true
         }
       }
-    }, done).start();
+    }, function (exitCode) {
+      done();
+      process.exit(exitCode);
+    }).start();
   });
 
   _gulp2.default.start('test');

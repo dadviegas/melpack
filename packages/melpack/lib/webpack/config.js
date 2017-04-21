@@ -28,6 +28,9 @@ exports.default = function (settings) {
       path: target,
       filename: '[name].js'
     },
+    module: {
+      rules: []
+    },
     plugins: [],
     resolve: {
       alias: {
@@ -38,6 +41,7 @@ exports.default = function (settings) {
     },
     performance: {
       hints: "warning"
-    }
+    },
+    stats: (0, _stats2.default)(settings)
   };
 };

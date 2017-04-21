@@ -15,7 +15,6 @@ var MelpackMiddelware = function () {
     this.settings = settings || {};
     this.context = context || {};
     this.stack = [];
-    this.stackResult = [];
 
     this.use = this.use.bind(this);
     this.run = this.run.bind(this);
@@ -58,12 +57,8 @@ var MelpackMiddelware = function () {
       node && node.middleware(this.context, function (err) {
         if (!err) {
           _this2.call(interactor);
-          _this2.stackResult.push(_this2.context);
         } else {
-          return _this2.endCallback({
-            error: _this2.stackResult,
-            success: false
-          });
+          return _this2.endCallback(_this2.context);
         }
       });
 

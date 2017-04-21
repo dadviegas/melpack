@@ -8,7 +8,5 @@ export default (options) => (settings) => (ctx, next) => {
     path: settings.path.resolve.target
   }
 
-  const isDefined = ctx.output
-
-  next(isDefined ? null : new Error('Output must be defined'))
+  next()
 }

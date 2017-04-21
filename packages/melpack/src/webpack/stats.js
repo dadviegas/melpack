@@ -6,11 +6,11 @@ export default (settings) => ({
     // Add information about cached (not built) modules
     cached: true,
     // Show cached assets (setting this to `false` only shows emitted files)
-    cachedAssets: true,
+    cachedAssets: false,
     // Add children information
-    children: true,
+    children: false,
     // Add chunk information (setting this to `false` allows for a less verbose output)
-    chunks: true,
+    chunks: false,
     // Add built modules information to chunk information
     chunkModules: true,
     // Add the origins of chunks and chunk merging info
@@ -22,7 +22,7 @@ export default (settings) => ({
     // `webpack --colors` equivalent
     colors: true,
     // Display the distance from the entry point for each module
-    depth: true,
+    depth: false,
     // Display the entry points with the corresponding bundles
     entrypoints: true,
     // Add errors
