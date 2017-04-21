@@ -40,6 +40,7 @@ exports.default = function (options) {
     return new _karma.Server({
       webpack: webpackConf,
       preprocessors: {
+        'src/**/*.js': ['webpack', 'sourcemap'],
         'specs/**/*.js': ['webpack', 'sourcemap']
       },
       basePath: settings.path.resolve.root,
@@ -55,7 +56,7 @@ exports.default = function (options) {
         failFast: false // test would finish with error when a first fail occurs. 
       },
       browsers: ['PhantomJS'],
-      files: ['src/**/*.js', 'specs/**/*.js'],
+      files: ['specs/**/*.js'],
       autoWatch: options.watch,
       singleRun: !options.watch,
       webpackMiddleware: {

@@ -22,6 +22,7 @@ export default (options, webpackConf = webpackConfigDefault, settings) => {
     return new Server({
       webpack: webpackConf,
       preprocessors: {
+        'src/**/*.js': ['webpack', 'sourcemap'],
         'specs/**/*.js': ['webpack', 'sourcemap']
       },
       basePath: settings.path.resolve.root,
@@ -40,7 +41,6 @@ export default (options, webpackConf = webpackConfigDefault, settings) => {
       },
       browsers: ['PhantomJS'],
       files: [
-        'src/**/*.js',
         'specs/**/*.js'
       ],
       autoWatch: options.watch,

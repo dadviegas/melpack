@@ -25,6 +25,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "chunk-manifest-webpack2-plugin": "^1.0.1",
-    "webpack-chunk-hash": "^0.4.0"
+    "webpack-chunk-hash": "^0.4.0",
+    "webpack": "^2.4.1"
   }
 }
