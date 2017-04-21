@@ -1,5 +1,5 @@
 {
-  "version": "1.0.31",
+  "version": "1.0.32",
   "name": "melpack",
   "main": "./lib/index.js",
   "description": "a bundle middleware for JavaScript",
