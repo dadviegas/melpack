@@ -21,8 +21,8 @@ export default (moduleOptions = {}) => {
   const {environment, releaseFlags} = options
 
   const bundle = melpack(options)
-  bundle.use(melpackEntryMiddleware({ index: ['./index.js'] }))
-  bundle.use(melpackOutputMiddleware({path: './lib'}))
+  bundle.use(melpackEntryMiddleware(options.entry || { index: ['./index.js'] }))
+  bundle.use(melpackOutputMiddleware(options.output || {path: './lib'}))
   bundle.use(melpackBabelMiddleware())
   bundle.use(melpackOptimizeMiddleware())
   bundle.use(melpackDefineMiddleware(releaseFlags))
