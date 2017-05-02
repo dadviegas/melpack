@@ -12,7 +12,7 @@
     "test": "npm run testScript -- --environment=test",
     "test:watch": "npm run test -- --watch"
   },
-  "dependencies": {
+  "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
